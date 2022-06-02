@@ -12,3 +12,5 @@ This code is from a larger project, but I have extracted the problematic part he
 ->check shift roster
 ->roundtime attendance calculation ( optional )
 ->generate attendance 
+
+I have prepared all the data required. If you run index.php/attendance/index_bkup then it will run the function.
