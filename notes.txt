@@ -1,0 +1,23 @@
+-> if possible uncomment line  "->where("{$current_date} BETWEEN date(leave_from) and date(leave_to)")" and show alternative way to do this
+-> same for employee_model // " and '{$date}' between leave_from and leave_to"; line no 43
+
+->loop through date
+->loop through employee
+->check shift
+->check holiday
+->check leave
+->check weekend
+->check half present
+->check half leave
+->check shift roster
+->roundtime attendance calculation ( optional )
+->generate attendance 
+
+currently, the "index_bkup" function is working fine but takes too much time. it may take from 1 min to 2 - 3 hours depending upon the data
+
+The index function is my way to make it run faster but it didn't work well.
+
+I need something that can run in less than 10 minutes however much the data be. I have prepared a database of around 200 users and around 100 days of attendance.
+
+
+The code may show some warning but attendance will be generated and stored in attendance table
