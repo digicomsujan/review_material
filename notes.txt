@@ -14,3 +14,6 @@ This code is from a larger project, but I have extracted the problematic part he
 ->generate attendance 
 
 I have prepared all the data required. If you run index.php/attendance/index_bkup then it will run the function.
+
+I have uploaded the images of timing tab of ajax request of the function.
+Those images are used to show the progress of the function.
