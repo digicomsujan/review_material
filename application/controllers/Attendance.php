@@ -1005,7 +1005,7 @@ class Attendance extends CI_Controller
                     if ($early_attend) {
                         $dayofweek = date('w', strtotime($ai['checkin']));
 
-                        if (($dayofweek == @$eshift->weekend) || ($this->employee_model->check_holiday($ai['checkin']))) {
+                        if (($dayofweek == @$eshift->weekend) || ($this->employee_model->check_holiday($ai['checkin'], $company_id))) {
                             if ($early_attend->checkin != '' && $early_attend->checkout != '') {
                                 $kstart = date_create(date('Y-m-d H:i:s', strtotime($early_attend->checkin)));
                                 $kend = date_create(date('Y-m-d H:i:s', strtotime($early_attend->checkout)));
